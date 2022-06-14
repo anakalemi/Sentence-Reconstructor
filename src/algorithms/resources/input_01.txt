@@ -1,0 +1,17 @@
+15
+abcde
+a
+b
+c
+d
+e
+ab
+bc
+cd
+de
+abc
+bcd
+cde
+abcd
+bcde
+abcde
