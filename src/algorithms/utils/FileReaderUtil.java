@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class FileReaderUtil {
     private final String TEST_FILE_01 = "src/algorithms/resources/input_01.txt";
     private final String TEST_FILE_02 = "src/algorithms/resources/input_02.txt";
+    private final String TEST_FILE_03 = "src/algorithms/resources/input_03.txt";
 
     public void getAndProcessFileData() {
         File file = new File(TEST_FILE_02);
@@ -38,7 +39,7 @@ public class FileReaderUtil {
             if (getInputData().getMaxDictWordLength() < word.length()) {
                 getInputData().setMaxDictWordLength(word.length());
             }
-            getInputData().getDictionary().add(word);
+            getInputData().getDictionary().add(word.toLowerCase());
 
             linesOfDictionary -= 1;
         }

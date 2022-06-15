@@ -38,7 +38,7 @@ public class DecipherUtil {
         StringBuilder word = new StringBuilder();
         for (int i = 1; i <= maxLength && i < text.length(); i++) {
             word.append(text.charAt(i - 1));
-            if (dictionary.contains(word.toString())) {
+            if (dictionary.contains(word.toString().toLowerCase())) {
                 List<String> temp = decipher(text.substring(i));
                 for (String s : temp) {
                     result.add(word + " " + s);
